@@ -1,5 +1,7 @@
 [gd_scene format=4 uid="uid://jgl2wju3umxg"]
 
+[ext_resource type="Script" uid="uid://b6fllrvpptql4" path="res://player/player.gd" id="1_oul6g"]
+
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_y1i2i"]
 _data = PackedByteArray("AAADAAUAAAABAAAAIAAAACAAAAC4AAAAUklGRrAAAABXRUJQVlA4TKQAAAAvH8AHEB+gkG0EaP4OI7uHi0CAov/3wgQ7BALJVvtFPv8Byb1zwFFtW8ty/u+bYV8hnABUsgBUsJnT4Jchab7F0O0+pEFE/xW2bdsw3btvsFwi49OSjg/ch/G6cTHiWGUTpwfsSlwWhxbrEvf0dmcfuPTyFu0rGtGrLJiqZdQN/vj3vvZWV0VLHYMO37xuOyHW5qC7g8wT+wnEwMUj7qhgSGT+DQ==")
 size_override = Vector2(32, 32)
@@ -40,15 +42,15 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
-size = Vector2(17.5, 13.5)
+[sub_resource type="CircleShape2D" id="CircleShape2D_2o4a8"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1895383633]
+[node name="Player" type="CharacterBody2D" unique_id=1895383633]
+script = ExtResource("1_oul6g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1390390085]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_scca8")
-frame_progress = 0.8805079
+frame_progress = 0.6203152
 metadata/_aseprite_wizard_interface_config_ = {
 "layer_section": false,
 "pending_changes": {}
@@ -68,6 +70,5 @@ metadata/_aseprite_wizard_config_ = {
 }
 metadata/_aseprite_wizard_source_file_hash_ = "711ed98901254680aab5e36aaf43c503"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=255912750]
-position = Vector2(0, -1.75)
-shape = SubResource("RectangleShape2D_wvhbo")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1181604780]
+shape = SubResource("CircleShape2D_2o4a8")
