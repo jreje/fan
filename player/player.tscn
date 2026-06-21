@@ -43,14 +43,16 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2o4a8"]
+radius = 84.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1895383633]
 script = ExtResource("1_oul6g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1390390085]
 texture_filter = 1
+scale = Vector2(10, 10)
 sprite_frames = SubResource("SpriteFrames_scca8")
-frame_progress = 0.6203152
+frame_progress = 0.20568708
 metadata/_aseprite_wizard_interface_config_ = {
 "layer_section": false,
 "pending_changes": {}
