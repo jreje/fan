@@ -1,0 +1,59 @@
+[gd_scene format=4 uid="uid://jgl2wju3umxg"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_186t8"]
+_data = PackedByteArray("AAADAAUAAAABAAAAQAAAACAAAADUAQAAUklGRswBAABXRUJQVlA4TL8BAAAvP8AHED+gFpIkaAk22+w5q/MnudMwEgAJEQaA2jzl/ymqadsIKoJu3Z5jdfyR3M1/APD/Zdlbs+N0PEYSJNe2XbcN12IRmV/kM+V6VyAKoFkB9NgAzTeXMUD/xAPCEiL6z8iNJCfeAJwowiumaeFgzNP0oGMpdTDS/KSj1OFIDzqW+utG0vfMTzo+tRKAlGGHqK3FKXcmV/QzuQ7ky4y+o9Z0OYx9B5DNVkgnO5K1eAGiZgEoTlJrqEf0HWhcqpOvRrbLtDQBQG5HoAy9L7Oh372EfF0vUM1sdR0A5HKbOFRdsV0vkk1w/gAQ3gJke2vIsfWUVM610QAhtTQg34UBHXOBkO1LOyL8JHSyrQQ+/7Zdj8MDfmoduOyLpdZ7mfZYE8OAaawpn992dKhFdgZPr0PDD4U0a0h+70F0p0OqEkIAZ5PM7IgBp76C+w5CArIH9949fQHboXSA7sUDTc1meyu1I/bfvVW+Rv/Ffd2YjnAkqRJ+q66jOY/Y/3c1x+Bo8R3dQwQULwFOrIOOs5F6W2qtdNZym12H2KFRuo5uSqmjDlONvmMqLoR0N0jTg46l1MFI85OOaeFgzNP/OyYA")
+size_override = Vector2(64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f50pn"]
+atlas = SubResource("PortableCompressedTexture2D_186t8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
+atlas = SubResource("PortableCompressedTexture2D_186t8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ghijl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f50pn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ij6vw")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
+size = Vector2(31, 31.5)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1895383633]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1390390085]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ghijl")
+frame = 1
+frame_progress = 0.117777616
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://Fan_front.aseprite",
+"source_uid": 2688928542764669189
+}
+metadata/_aseprite_wizard_source_file_hash_ = "5cdc790d240c1ff47773655641ad1362"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=255912750]
+position = Vector2(0, 0.25)
+shape = SubResource("RectangleShape2D_wvhbo")
