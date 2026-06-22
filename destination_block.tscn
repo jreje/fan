@@ -1,0 +1,40 @@
+[gd_scene format=4 uid="uid://yqglxjmwx3jg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n6con"]
+size = Vector2(12, 5)
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_tqluh"]
+_data = PackedByteArray("AAADAAUAAAABAAAAEAAAABAAAAA+AAAAUklGRjYAAABXRUJQVlA4TCoAAAAvD8ADEBcw8rM/NvMfgAeFkCQ5l7kO4dMqnD/FJ4KI/k9AA3yjKhJg+ho=")
+size_override = Vector2(16, 16)
+
+[node name="Destination_Block" type="StaticBody2D" unique_id=580048239]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=571305096]
+position = Vector2(0, -5.5)
+shape = SubResource("RectangleShape2D_n6con")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=851866382]
+texture_filter = 1
+texture = SubResource("PortableCompressedTexture2D_tqluh")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://fan_destination.aseprite",
+"source_uid": 2127406421928617244
+}
+metadata/_aseprite_wizard_source_file_hash_ = "bc95f943933eb983820548b64c274b31"
