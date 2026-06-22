@@ -38,7 +38,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ydsn6")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"fly",
 "speed": 10.0
 }]
 
@@ -52,8 +52,7 @@ script = ExtResource("1_oul6g")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1390390085]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_scca8")
-frame = 3
-frame_progress = 0.7494397
+animation = &"fly"
 metadata/_aseprite_wizard_interface_config_ = {
 "layer_section": false,
 "pending_changes": {}
