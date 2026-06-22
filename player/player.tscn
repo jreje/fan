@@ -42,8 +42,9 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_2o4a8"]
-radius = 8.062258
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r0du0"]
+radius = 5.0
+height = 12.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1895383633]
 script = ExtResource("1_oul6g")
@@ -51,7 +52,8 @@ script = ExtResource("1_oul6g")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1390390085]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_scca8")
-frame_progress = 0.20568708
+frame = 3
+frame_progress = 0.7494397
 metadata/_aseprite_wizard_interface_config_ = {
 "layer_section": false,
 "pending_changes": {}
@@ -72,4 +74,5 @@ metadata/_aseprite_wizard_config_ = {
 metadata/_aseprite_wizard_source_file_hash_ = "711ed98901254680aab5e36aaf43c503"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1181604780]
-shape = SubResource("CircleShape2D_2o4a8")
+position = Vector2(0, -2)
+shape = SubResource("CapsuleShape2D_r0du0")
