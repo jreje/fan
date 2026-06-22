@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://woocu64r6rey"]
+
+[ext_resource type="Texture2D" uid="uid://dwe0h05xhaygw" path="res://table.png" id="1_jd0nb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8jgre"]
+size = Vector2(13, 9)
+
+[node name="table" type="StaticBody2D" unique_id=1952275475]
+
+[node name="Table" type="Sprite2D" parent="." unique_id=441527875]
+position = Vector2(23, 2)
+texture = ExtResource("1_jd0nb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=113265983]
+position = Vector2(22.5, 2.5)
+shape = SubResource("RectangleShape2D_8jgre")
