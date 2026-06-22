@@ -42,9 +42,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r0du0"]
-radius = 5.0
-height = 12.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
+size = Vector2(16, 11)
 
 [node name="Player" type="CharacterBody2D" unique_id=1895383633]
 script = ExtResource("1_oul6g")
@@ -54,8 +53,11 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_scca8")
 animation = &"fly"
 metadata/_aseprite_wizard_interface_config_ = {
-"layer_section": false,
-"pending_changes": {}
+"animation_section": false,
+"layer_section": true,
+"output_section": false,
+"pending_changes": {},
+"slice_section": false
 }
 metadata/_aseprite_wizard_config_ = {
 "embed_tex": true,
@@ -72,6 +74,6 @@ metadata/_aseprite_wizard_config_ = {
 }
 metadata/_aseprite_wizard_source_file_hash_ = "711ed98901254680aab5e36aaf43c503"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1181604780]
-position = Vector2(0, -2)
-shape = SubResource("CapsuleShape2D_r0du0")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1732256716]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_rkbax")
