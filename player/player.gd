@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const FLY_VELOCITY = 500.0
+const fly_speed = 100.0
 var screen_size
 var rotation_speed = 500.0
 var move_speed = 50.0
@@ -11,23 +11,27 @@ func _ready():
 	screen_size = get_viewport_rect().size
 
 func _physics_process(delta: float) -> void:
-	direction = Input.get_axis("tilt_left", "tilt_right")
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
 	# Tilting Mechanic
+	direction = Input.get_axis("tilt_left", "tilt_right")
 	if direction:
-		global_rotation_degrees += direction * rotation_speed * delta
-
+		rotation_degrees += direction * rotation_speed * delta
+		
+	# Balancing
+	if global_rotation_degrees != 0:
+		rotation_speed = direction * rotation_speed * delta
+	
 	# Flying
 	if Input.is_action_pressed("fly"):
 		# TODO: Make sure if facing down, we have velocity and gravity compounded
-		velocity = Vector2(0, -15).rotated(rotation) * FLY_VELOCITY * delta
+		velocity = Vector2(0, -15).rotated(rotation) * fly_speed * delta
 		$AnimatedSprite2D.play("fly")
 	
 	if Input.is_action_just_released("fly"):
-		velocity.x = direction * FLY_VELOCITY * delta * 0.25
+		velocity.x = direction * fly_speed * delta * 0.25
 		$AnimatedSprite2D.stop()
 	move_and_slide()
 	
