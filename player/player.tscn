@@ -43,7 +43,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oul6g"]
-size = Vector2(8, 9)
+size = Vector2(8, 7)
 
 [node name="Player" type="RigidBody2D" unique_id=468539146]
 script = ExtResource("1_oul6g")
@@ -75,5 +75,5 @@ metadata/_aseprite_wizard_config_ = {
 metadata/_aseprite_wizard_source_file_hash_ = "711ed98901254680aab5e36aaf43c503"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1732256716]
-position = Vector2(0, -3.5)
+position = Vector2(0, -2.5)
 shape = SubResource("RectangleShape2D_oul6g")

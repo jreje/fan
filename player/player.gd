@@ -1,8 +1,8 @@
 extends RigidBody2D
 
-const THRUST_AMOUNT = 400.0
+const THRUST_AMOUNT = 100.0
 var screen_size
-var rotation_speed = 500.0
+var rotation_speed = 250.0
 
 # TODO: For the future, top of fan should naturally tilt left/right making it harder to fly
 func _ready():
