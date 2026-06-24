@@ -41,13 +41,13 @@ theme_override_constants/separation = 16
 [node name="Restart" type="Button" parent="PanelContainer/MarginContainer/rows/CenterContainer/VBoxContainer" unique_id=665334482]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_l4tlu")
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 16
 text = "Restart"
 
 [node name="Quit" type="Button" parent="PanelContainer/MarginContainer/rows/CenterContainer/VBoxContainer" unique_id=1418618652]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_l4tlu")
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 16
 text = "Quit"
 
 [connection signal="pressed" from="PanelContainer/MarginContainer/rows/CenterContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]

@@ -29,4 +29,9 @@ func _physics_process(delta: float) -> void:
 	# For now, have reduced screen size by half of the collisionshape's size
 	# position = position.clamp(Vector2.ZERO, screen_size - ($CollisionShape2D.shape.size /2))
 	
+
+	
 	print(linear_velocity)
+	
+	
+		
