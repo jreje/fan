@@ -79,10 +79,10 @@ position = Vector2(264, 72)
 shape = SubResource("RectangleShape2D_jrdhs")
 
 [node name="Destination_Block" parent="." unique_id=580048239 instance=ExtResource("4_fos0i")]
-position = Vector2(131, 8)
+position = Vector2(131, 9)
 
 [node name="CharacterBody2D" parent="." unique_id=1895383633 instance=ExtResource("3_lquwl")]
-position = Vector2(131, 13)
+position = Vector2(131, 17)
 
 [node name="chairscn" parent="." unique_id=1836747146 instance=ExtResource("6_3dxm6")]
 position = Vector2(5, 124)

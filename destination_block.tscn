@@ -1,5 +1,7 @@
 [gd_scene format=4 uid="uid://yqglxjmwx3jg"]
 
+[ext_resource type="Script" uid="uid://w87qise2jmig" path="res://destination_block.gd" id="1_n6con"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n6con"]
 size = Vector2(12, 5)
 
@@ -7,7 +9,8 @@ size = Vector2(12, 5)
 _data = PackedByteArray("AAADAAUAAAABAAAAEAAAABAAAAA+AAAAUklGRjYAAABXRUJQVlA4TCoAAAAvD8ADEBcw8rM/NvMfgAeFkCQ5l7kO4dMqnD/FJ4KI/k9AA3yjKhJg+ho=")
 size_override = Vector2(16, 16)
 
-[node name="Destination_Block" type="StaticBody2D" unique_id=580048239]
+[node name="Destination_Block" type="Area2D" unique_id=1141753750]
+script = ExtResource("1_n6con")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=571305096]
 position = Vector2(0, -5.5)
@@ -38,3 +41,6 @@ metadata/_aseprite_wizard_config_ = {
 "source_uid": 2127406421928617244
 }
 metadata/_aseprite_wizard_source_file_hash_ = "bc95f943933eb983820548b64c274b31"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
