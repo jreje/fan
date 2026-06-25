@@ -90,3 +90,9 @@ position = Vector2(5, 124)
 
 [node name="table" parent="." unique_id=1952275475 instance=ExtResource("7_lgr22")]
 position = Vector2(6, 121)
+
+[node name="table2" parent="." unique_id=895405684 instance=ExtResource("7_lgr22")]
+position = Vector2(175, 119)
+
+[node name="chairscn2" parent="." unique_id=1170459740 instance=ExtResource("6_3dxm6")]
+position = Vector2(168, 122)
