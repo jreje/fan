@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://yx0qca3h6vq0"]
 
-[ext_resource type="Texture2D" uid="uid://c7y3wj5su1pww" path="res://chair.png" id="1_xapo8"]
-[ext_resource type="Script" uid="uid://co0ljr0qhgo7p" path="res://area_2d_2.gd" id="2_sb570"]
+[ext_resource type="Texture2D" uid="uid://c7y3wj5su1pww" path="res://level/obstacles/chair/chair.png" id="1_xapo8"]
+[ext_resource type="Script" uid="uid://co0ljr0qhgo7p" path="res://level/area_2d_2.gd" id="2_sb570"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2g4l4"]
 size = Vector2(11, 15)

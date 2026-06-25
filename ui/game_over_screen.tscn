@@ -1,14 +1,14 @@
-[gd_scene format=3 uid="uid://c26ak3qbouvfd"]
+[gd_scene format=3 uid="uid://dwgx3j6xqb2vd"]
 
-[ext_resource type="Script" uid="uid://cnynhcrd6wcgq" path="res://game_over_screen.gd" id="1_wmwda"]
-[ext_resource type="FontFile" uid="uid://drhonqegn5e06" path="res://minecraft/Minecraft.ttf" id="2_l5t5q"]
+[ext_resource type="Script" uid="uid://cnynhcrd6wcgq" path="res://ui/game_over_screen.gd" id="1_w3hxg"]
+[ext_resource type="FontFile" uid="uid://drhonqegn5e06" path="res://minecraft/Minecraft.ttf" id="2_l4tlu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ob1uy"]
 bg_color = Color(0.38431373, 0.16470589, 0.05882353, 1)
 border_color = Color(0, 0, 0, 1)
 
 [node name="GameOverScreen" type="CanvasLayer" unique_id=725627356]
-script = ExtResource("1_wmwda")
+script = ExtResource("1_w3hxg")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=2077369560]
 anchors_preset = 15
@@ -27,8 +27,8 @@ theme_override_constants/separation = 32
 
 [node name="Title" type="Label" parent="PanelContainer/MarginContainer/rows" unique_id=1008800529]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_l5t5q")
-text = "You Win!"
+theme_override_fonts/font = ExtResource("2_l4tlu")
+text = "Game Over"
 horizontal_alignment = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="PanelContainer/MarginContainer/rows" unique_id=1310436814]
@@ -40,13 +40,13 @@ theme_override_constants/separation = 16
 
 [node name="Restart" type="Button" parent="PanelContainer/MarginContainer/rows/CenterContainer/VBoxContainer" unique_id=665334482]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_l5t5q")
+theme_override_fonts/font = ExtResource("2_l4tlu")
 theme_override_font_sizes/font_size = 16
 text = "Restart"
 
 [node name="Quit" type="Button" parent="PanelContainer/MarginContainer/rows/CenterContainer/VBoxContainer" unique_id=1418618652]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_l5t5q")
+theme_override_fonts/font = ExtResource("2_l4tlu")
 theme_override_font_sizes/font_size = 16
 text = "Quit"
 

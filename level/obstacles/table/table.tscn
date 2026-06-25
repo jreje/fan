@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://woocu64r6rey"]
 
-[ext_resource type="Texture2D" uid="uid://dwe0h05xhaygw" path="res://table.png" id="1_jd0nb"]
-[ext_resource type="Script" uid="uid://gtimo8g4dwyj" path="res://area_2d.gd" id="2_v5i0k"]
+[ext_resource type="Texture2D" uid="uid://dwe0h05xhaygw" path="res://level/obstacles/table/table.png" id="1_jd0nb"]
+[ext_resource type="Script" uid="uid://gtimo8g4dwyj" path="res://level/area_2d.gd" id="2_v5i0k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8jgre"]
 size = Vector2(32, 15)

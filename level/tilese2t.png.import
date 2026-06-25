@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7y3wj5su1pww"
-path="res://.godot/imported/chair.png-e75ea7af3c0c332052214ee68a682d23.ctex"
+uid="uid://cys5yc2jcp3vh"
+path="res://.godot/imported/tilese2t.png-1aaf7893d3c9285fa9915e8aaea74758.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://chair.png"
-dest_files=["res://.godot/imported/chair.png-e75ea7af3c0c332052214ee68a682d23.ctex"]
+source_file="res://level/tilese2t.png"
+dest_files=["res://.godot/imported/tilese2t.png-1aaf7893d3c9285fa9915e8aaea74758.ctex"]
 
 [params]
 
