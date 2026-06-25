@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-var THRUST_AMOUNT = 40.0
+var THRUST_AMOUNT = 30.0
 var screen_size
 var rotation_speed = 10.0
 var contact_count = 0
@@ -14,8 +14,6 @@ func _ready():
 	angular_damp = 5
 	contact_monitor = true
 	max_contacts_reported = 4
-	body_entered.connect(_on_body_entered)
-	body_exited.connect(_on_body_exited)
 
 # TODO: Simplify body_entered. Perhaps I can only use a body entered and the is in group property
 func _on_body_entered(body: Node) -> void:
