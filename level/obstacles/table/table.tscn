@@ -8,16 +8,16 @@ size = Vector2(32, 15)
 
 [node name="table" type="StaticBody2D" unique_id=895405684]
 
+[node name="Table2" type="Area2D" parent="." unique_id=1623129056]
+script = ExtResource("2_v5i0k")
+
+[node name="killzone" type="CollisionShape2D" parent="Table2" unique_id=113265983]
+position = Vector2(36, 11.5)
+shape = SubResource("RectangleShape2D_8jgre")
+
 [node name="Table" type="Sprite2D" parent="." unique_id=441527875]
 position = Vector2(35, 9.5)
 scale = Vector2(2.5000002, 1.9375)
 texture = ExtResource("1_jd0nb")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1623129056]
-script = ExtResource("2_v5i0k")
-
-[node name="killzone" type="CollisionShape2D" parent="Area2D" unique_id=113265983]
-position = Vector2(36, 11.5)
-shape = SubResource("RectangleShape2D_8jgre")
-
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Table2" to="Table2" method="_on_body_entered"]

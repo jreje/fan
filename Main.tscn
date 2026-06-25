@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://yqglxjmwx3jg" path="res://level/destination_block/destination_block.tscn" id="4_fos0i"]
 [ext_resource type="PackedScene" uid="uid://yx0qca3h6vq0" path="res://level/obstacles/chair/chairscn.tscn" id="6_3dxm6"]
 [ext_resource type="PackedScene" uid="uid://woocu64r6rey" path="res://level/obstacles/table/table.tscn" id="7_lgr22"]
+[ext_resource type="PackedScene" uid="uid://cwvdl6pb413k8" path="res://plane.tscn" id="8_trn2v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("2_1bvp3")
@@ -96,3 +97,6 @@ position = Vector2(175, 119)
 
 [node name="chairscn2" parent="." unique_id=1170459740 instance=ExtResource("6_3dxm6")]
 position = Vector2(168, 122)
+
+[node name="plane" parent="." unique_id=1971907020 instance=ExtResource("8_trn2v")]
+position = Vector2(27, 66)
