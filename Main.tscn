@@ -1,16 +1,18 @@
 [gd_scene format=4 uid="uid://bo5nupchaddcm"]
 
-[ext_resource type="Script" uid="uid://my1sog52gr8i" path="res://main.gd" id="1_h2yge"]
-[ext_resource type="Texture2D" uid="uid://bjmsg1pu7wmfj" path="res://level/Testing_Tilesheet.png" id="2_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://cys5yc2jcp3vh" path="res://level/tilese2t.png" id="3_cm0pq"]
-[ext_resource type="PackedScene" uid="uid://jgl2wju3umxg" path="res://player/player.tscn" id="3_lquwl"]
-[ext_resource type="PackedScene" uid="uid://yqglxjmwx3jg" path="res://level/destination_block/destination_block.tscn" id="4_fos0i"]
-[ext_resource type="PackedScene" uid="uid://yx0qca3h6vq0" path="res://level/obstacles/chair/chairscn.tscn" id="6_3dxm6"]
-[ext_resource type="PackedScene" uid="uid://woocu64r6rey" path="res://level/obstacles/table/table.tscn" id="7_lgr22"]
-[ext_resource type="PackedScene" uid="uid://cwvdl6pb413k8" path="res://plane.tscn" id="8_trn2v"]
+[ext_resource type="Script" uid="uid://my1sog52gr8i" path="res://main.gd" id="1_4c57u"]
+[ext_resource type="Texture2D" uid="uid://bjmsg1pu7wmfj" path="res://level/Testing_Tilesheet.png" id="2_efxa6"]
+[ext_resource type="Texture2D" uid="uid://cys5yc2jcp3vh" path="res://level/tilese2t.png" id="3_dg77c"]
+[ext_resource type="PackedScene" uid="uid://yqglxjmwx3jg" path="res://level/destination_block/destination_block.tscn" id="4_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://jgl2wju3umxg" path="res://player/player.tscn" id="5_w48qg"]
+[ext_resource type="PackedScene" uid="uid://yx0qca3h6vq0" path="res://level/obstacles/chair/chairscn.tscn" id="6_vivmo"]
+[ext_resource type="PackedScene" uid="uid://woocu64r6rey" path="res://level/obstacles/table/table.tscn" id="7_2cqfq"]
+[ext_resource type="PackedScene" uid="uid://cwvdl6pb413k8" path="res://plane.tscn" id="8_yaehf"]
+[ext_resource type="PackedScene" uid="uid://bfhqr67p734h7" path="res://ui/controls_directions_message.tscn" id="9_074og"]
+[ext_resource type="Script" uid="uid://dye2j1eg478y3" path="res://ui/controls_directions_message.gd" id="10_cegan"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
-texture = ExtResource("2_1bvp3")
+texture = ExtResource("2_efxa6")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -27,7 +29,7 @@ texture = ExtResource("2_1bvp3")
 13:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fos0i"]
-texture = ExtResource("3_cm0pq")
+texture = ExtResource("3_dg77c")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -54,8 +56,8 @@ size = Vector2(20, 144)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jrdhs"]
 size = Vector2(20, 144)
 
-[node name="Main2" type="Node" unique_id=757662205]
-script = ExtResource("1_h2yge")
+[node name="Main" type="Node" unique_id=757662205]
+script = ExtResource("1_4c57u")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=303623119]
 tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAAPAAAAAQACAAAAAAABAAAAAQABAAAAAAACAAAAAQABAAAAAAADAAAAAQABAAAAAAAEAAAAAQABAAAAAAAFAAAAAQABAAAAAAAGAAAAAQABAAAAAAAHAAAAAQABAAAAAAAIAAAAAQABAAAAAAAJAAAAAQABAAAAAAAKAAAAAQABAAAAAAALAAAAAQABAAAAAAAMAAAAAQABAAAAAAANAAAAAQABAAAAAAAOAAAAAQABAAAAAAAAAAEAAQAAAAEAAAAAAAIAAQAAAAEAAAAAAAMAAQAAAAEAAAAAAAQAAQAAAAEAAAAAAAUAAQAAAAEAAAAAAAYAAQAAAAEAAAAAAAcAAQAAAAEAAAAAAAgAAQAAAAEAAAAAAAkAAQAAAAEAAAAAAAoAAQAAAAEAAAAAAAsAAQAAAAIAAAABAAsAAQABAAIAAAACAAsAAQABAAIAAAADAAsAAQABAAIAAAAEAAsAAQABAAIAAAAFAAsAAQABAAIAAAAGAAsAAQABAAIAAAAHAAsAAQABAAIAAAAIAAsAAQABAAIAAAAJAAsAAQABAAIAAAAKAAsAAQABAAIAAAALAAsAAQABAAIAAAAMAAsAAQABAAIAAAANAAsAAQABAAIAAAAOAAsAAQABAAIAAAAPAAsAAQACAAIAAAAPAAoAAQACAAEAAAAPAAkAAQACAAEAAAAPAAgAAQACAAEAAAAPAAcAAQACAAEAAAAPAAYAAQACAAEAAAAPAAUAAQACAAEAAAAPAAQAAQACAAEAAAAPAAMAAQACAAEAAAAPAAIAAQACAAEAAAAPAAEAAQACAAEAAAABAAEAAQABAAEAAAABAAIAAQABAAEAAAABAAMAAQABAAEAAAABAAQAAQABAAEAAAABAAUAAQABAAEAAAABAAYAAQABAAEAAAABAAcAAQABAAEAAAABAAgAAQABAAEAAAABAAkAAQABAAEAAAABAAoAAQABAAEAAAACAAoAAQABAAEAAAADAAoAAQABAAEAAAAEAAoAAQABAAEAAAAFAAoAAQABAAEAAAAGAAoAAQABAAEAAAAHAAoAAQABAAEAAAAIAAoAAQABAAEAAAAJAAoAAQABAAEAAAAKAAoAAQABAAEAAAALAAoAAQABAAEAAAAMAAoAAQABAAEAAAANAAoAAQABAAEAAAAOAAoAAQABAAEAAAAOAAkAAQABAAEAAAANAAkAAQABAAEAAAAMAAkAAQABAAEAAAALAAkAAQABAAEAAAAKAAkAAQABAAEAAAAJAAkAAQABAAEAAAAIAAkAAQABAAEAAAAHAAkAAQABAAEAAAAGAAkAAQABAAEAAAAFAAkAAQABAAEAAAAEAAkAAQABAAEAAAADAAkAAQABAAEAAAACAAkAAQABAAEAAAACAAgAAQABAAEAAAACAAcAAQABAAEAAAACAAYAAQABAAEAAAACAAUAAQABAAEAAAACAAQAAQABAAEAAAACAAMAAQABAAEAAAACAAIAAQABAAEAAAACAAEAAQABAAEAAAADAAEAAQABAAEAAAAEAAEAAQABAAEAAAAFAAEAAQABAAEAAAAGAAEAAQABAAEAAAAHAAEAAQABAAEAAAAIAAEAAQABAAEAAAAJAAEAAQABAAEAAAAKAAEAAQABAAEAAAALAAEAAQABAAEAAAAMAAEAAQABAAEAAAANAAEAAQABAAEAAAAOAAEAAQABAAEAAAAOAAIAAQABAAEAAAAOAAMAAQABAAEAAAAOAAQAAQABAAEAAAAOAAUAAQABAAEAAAAOAAYAAQABAAEAAAAOAAcAAQABAAEAAAAOAAgAAQABAAEAAAANAAgAAQABAAEAAAAMAAgAAQABAAEAAAALAAgAAQABAAEAAAAKAAgAAQABAAEAAAAJAAgAAQABAAEAAAAIAAgAAQABAAEAAAAGAAgAAQABAAEAAAAFAAgAAQABAAEAAAAEAAgAAQABAAEAAAADAAgAAQABAAEAAAADAAcAAQABAAEAAAADAAYAAQABAAEAAAADAAUAAQABAAEAAAADAAQAAQABAAEAAAADAAMAAQABAAEAAAADAAIAAQABAAEAAAAEAAIAAQABAAEAAAAFAAIAAQABAAEAAAAGAAIAAQABAAEAAAAHAAIAAQABAAEAAAAIAAIAAQABAAEAAAAJAAIAAQABAAEAAAAKAAIAAQABAAEAAAALAAIAAQABAAEAAAAMAAIAAQABAAEAAAANAAIAAQABAAEAAAANAAQAAQABAAEAAAANAAUAAQABAAEAAAANAAYAAQABAAEAAAANAAcAAQABAAEAAAAMAAcAAQABAAEAAAALAAcAAQABAAEAAAAKAAcAAQABAAEAAAAJAAcAAQABAAEAAAAIAAcAAQABAAEAAAAHAAcAAQABAAEAAAAGAAcAAQABAAEAAAAFAAcAAQABAAEAAAAFAAYAAQABAAEAAAAEAAYAAQABAAEAAAAEAAUAAQABAAEAAAAEAAQAAQABAAEAAAAEAAMAAQABAAEAAAAFAAMAAQABAAEAAAAGAAMAAQABAAEAAAAHAAMAAQABAAEAAAAIAAMAAQABAAEAAAAJAAMAAQABAAEAAAAKAAMAAQABAAEAAAALAAMAAQABAAEAAAAMAAMAAQABAAEAAAAMAAQAAQABAAEAAAAMAAUAAQABAAEAAAANAAMAAQABAAEAAAALAAYAAQABAAEAAAAKAAYAAQABAAEAAAAJAAYAAQABAAEAAAAIAAYAAQABAAEAAAAHAAYAAQABAAEAAAAGAAYAAQABAAEAAAAEAAcAAQABAAEAAAAMAAYAAQABAAEAAAALAAUAAQABAAEAAAAKAAUAAQABAAEAAAAJAAUAAQABAAEAAAAIAAUAAQABAAEAAAAHAAUAAQABAAEAAAAGAAUAAQABAAEAAAAGAAQAAQABAAEAAAAFAAQAAQABAAEAAAAHAAQAAQABAAEAAAAIAAQAAQABAAEAAAAJAAQAAQABAAEAAAAKAAQAAQABAAEAAAALAAQAAQABAAEAAAAFAAUAAQABAAEAAAAHAAgAAQABAAEAAAA=")
@@ -80,23 +82,34 @@ shape = SubResource("RectangleShape2D_abi3o")
 position = Vector2(266, 72)
 shape = SubResource("RectangleShape2D_jrdhs")
 
-[node name="Destination_Block" parent="." unique_id=580048239 instance=ExtResource("4_fos0i")]
+[node name="Destination_Block" parent="." unique_id=580048239 instance=ExtResource("4_ycdy4")]
+visibility_layer = 4
 position = Vector2(131, 9)
 
-[node name="Player" parent="." unique_id=1895383633 instance=ExtResource("3_lquwl")]
+[node name="Player" parent="." unique_id=1895383633 instance=ExtResource("5_w48qg")]
+visibility_layer = 4
 position = Vector2(131, 17)
 
-[node name="chairscn" parent="." unique_id=1836747146 instance=ExtResource("6_3dxm6")]
+[node name="chairscn" parent="." unique_id=1836747146 instance=ExtResource("6_vivmo")]
+visibility_layer = 4
 position = Vector2(5, 124)
 
-[node name="table" parent="." unique_id=1952275475 instance=ExtResource("7_lgr22")]
+[node name="table" parent="." unique_id=1952275475 instance=ExtResource("7_2cqfq")]
+visibility_layer = 4
 position = Vector2(6, 121)
 
-[node name="table2" parent="." unique_id=895405684 instance=ExtResource("7_lgr22")]
+[node name="table2" parent="." unique_id=895405684 instance=ExtResource("7_2cqfq")]
+visibility_layer = 4
 position = Vector2(175, 119)
 
-[node name="chairscn2" parent="." unique_id=1170459740 instance=ExtResource("6_3dxm6")]
+[node name="chairscn2" parent="." unique_id=1170459740 instance=ExtResource("6_vivmo")]
+visibility_layer = 4
 position = Vector2(168, 122)
 
-[node name="plane" parent="." unique_id=1971907020 instance=ExtResource("8_trn2v")]
+[node name="plane" parent="." unique_id=1971907020 instance=ExtResource("8_yaehf")]
+visibility_layer = 4
 position = Vector2(27, 66)
+
+[node name="controls_directions_message" parent="." unique_id=1071352987 instance=ExtResource("9_074og")]
+layer = 0
+script = ExtResource("10_cegan")

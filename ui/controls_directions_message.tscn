@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bfhqr67p734h7"]
+
+[ext_resource type="FontFile" uid="uid://drhonqegn5e06" path="res://assets/minecraft/Minecraft.ttf" id="1_6py1q"]
+
+[node name="controls_directions_message" type="CanvasLayer" unique_id=1071352987]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1582705280]
+offset_right = 319.0
+offset_bottom = 81.0
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1063968432]
+texture_filter = 1
+layout_mode = 2
+
+[node name="Fly_Directions" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1910255583]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_6py1q")
+text = "Use Space to Fly"
+
+[node name="Tilt_Directions" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1329346104]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_6py1q")
+text = "Use <- -> or A and D to Tilt"

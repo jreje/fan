@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c26ak3qbouvfd"]
 
 [ext_resource type="Script" uid="uid://cnynhcrd6wcgq" path="res://ui/game_over_screen.gd" id="1_wmwda"]
-[ext_resource type="FontFile" uid="uid://drhonqegn5e06" path="res://minecraft/Minecraft.ttf" id="2_l5t5q"]
+[ext_resource type="FontFile" uid="uid://drhonqegn5e06" path="res://assets/minecraft/Minecraft.ttf" id="2_l5t5q"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ob1uy"]
 bg_color = Color(0.38431373, 0.16470589, 0.05882353, 1)
