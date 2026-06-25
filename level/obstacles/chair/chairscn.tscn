@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://yx0qca3h6vq0"]
 
 [ext_resource type="Texture2D" uid="uid://c7y3wj5su1pww" path="res://level/obstacles/chair/chair.png" id="1_xapo8"]
-[ext_resource type="Script" uid="uid://co0ljr0qhgo7p" path="res://level/area_2d_2.gd" id="2_sb570"]
+[ext_resource type="Script" uid="uid://f2vskgieafd4" path="res://level/obstacles/chair/chair.gd" id="2_ruis5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2g4l4"]
 size = Vector2(11, 15)
@@ -16,7 +16,7 @@ scale = Vector2(1.5, 1.625)
 texture = ExtResource("1_xapo8")
 
 [node name="area2d2" type="Area2D" parent="." unique_id=243205336]
-script = ExtResource("2_sb570")
+script = ExtResource("2_ruis5")
 
 [node name="killzone2" type="CollisionShape2D" parent="area2d2" unique_id=1777946364]
 position = Vector2(3.5, 7.5)

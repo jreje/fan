@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://woocu64r6rey"]
 
 [ext_resource type="Texture2D" uid="uid://dwe0h05xhaygw" path="res://level/obstacles/table/table.png" id="1_jd0nb"]
-[ext_resource type="Script" uid="uid://gtimo8g4dwyj" path="res://level/area_2d.gd" id="2_v5i0k"]
+[ext_resource type="Script" uid="uid://c66sc8oe7s5vu" path="res://level/obstacles/table/table.gd" id="1_ktotb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8jgre"]
 size = Vector2(32, 15)
@@ -9,7 +9,7 @@ size = Vector2(32, 15)
 [node name="table" type="StaticBody2D" unique_id=895405684]
 
 [node name="Table2" type="Area2D" parent="." unique_id=1623129056]
-script = ExtResource("2_v5i0k")
+script = ExtResource("1_ktotb")
 
 [node name="killzone" type="CollisionShape2D" parent="Table2" unique_id=113265983]
 position = Vector2(36, 11.5)

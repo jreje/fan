@@ -1,4 +1,4 @@
-extends RigidBody2D
+extends Area2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -12,5 +12,5 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node) -> void:
-	get_tree().change_scene_to_file("res://ui/game_over_screen.tscn")
+	get_tree().change_scene_to_file("res:///ui/game_over_screen.tscn")
 	
