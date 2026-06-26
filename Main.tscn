@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://jgl2wju3umxg" path="res://player/player.tscn" id="5_w48qg"]
 [ext_resource type="PackedScene" uid="uid://yx0qca3h6vq0" path="res://level/obstacles/chair/chairscn.tscn" id="6_vivmo"]
 [ext_resource type="PackedScene" uid="uid://woocu64r6rey" path="res://level/obstacles/table/table.tscn" id="7_2cqfq"]
-[ext_resource type="PackedScene" uid="uid://cwvdl6pb413k8" path="res://plane.tscn" id="8_yaehf"]
+[ext_resource type="PackedScene" uid="uid://cwvdl6pb413k8" path="res://level/obstacles/plane/plane.tscn" id="8_yaehf"]
 [ext_resource type="PackedScene" uid="uid://bfhqr67p734h7" path="res://ui/controls_directions_message.tscn" id="9_074og"]
 [ext_resource type="Script" uid="uid://dye2j1eg478y3" path="res://ui/controls_directions_message.gd" id="10_cegan"]
 
@@ -88,7 +88,7 @@ position = Vector2(131, 9)
 
 [node name="Player" parent="." unique_id=1895383633 instance=ExtResource("5_w48qg")]
 visibility_layer = 4
-position = Vector2(131, 17)
+position = Vector2(120, 30)
 
 [node name="chairscn" parent="." unique_id=1836747146 instance=ExtResource("6_vivmo")]
 visibility_layer = 4

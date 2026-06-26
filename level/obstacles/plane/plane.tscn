@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cwvdl6pb413k8"]
 
-[ext_resource type="Script" uid="uid://do8wh2xycauj2" path="res://planebody.gd" id="1_dpar4"]
-[ext_resource type="Texture2D" uid="uid://27y3hh8fvs3c" path="res://level/obstacles/plane.png" id="2_nqs3l"]
+[ext_resource type="Script" uid="uid://do8wh2xycauj2" path="res://level/obstacles/plane/planebody.gd" id="1_dpar4"]
+[ext_resource type="Texture2D" uid="uid://27y3hh8fvs3c" path="res://level/obstacles/plane/plane.png" id="2_nqs3l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nt6kf"]
 size = Vector2(4, 5)
