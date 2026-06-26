@@ -95,7 +95,7 @@ position = Vector2(131, 9)
 
 [node name="Player" parent="." unique_id=1895383633 instance=ExtResource("5_w48qg")]
 visibility_layer = 4
-position = Vector2(120, 30)
+position = Vector2(112, 64)
 
 [node name="chairscn" parent="." unique_id=1836747146 instance=ExtResource("6_vivmo")]
 visibility_layer = 4
