@@ -11,9 +11,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
-
-
-
 func _on_body_entered(body: Node2D) -> void:
 	get_tree().change_scene_to_file("res://ui/win_screen.tscn")

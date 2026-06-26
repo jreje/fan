@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cwvdl6pb413k8"]
 
-[ext_resource type="Script" uid="uid://do8wh2xycauj2" path="res://level/obstacles/plane/planebody.gd" id="1_dpar4"]
+[ext_resource type="Script" uid="uid://do8wh2xycauj2" path="res://level/obstacles/plane/plane.gd" id="1_dpar4"]
 [ext_resource type="Texture2D" uid="uid://27y3hh8fvs3c" path="res://level/obstacles/plane/plane.png" id="2_nqs3l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nt6kf"]
 size = Vector2(4, 5)
 
-[node name="plane" type="Node2D" unique_id=1971907020]
+[node name="plane" type="Node2D" unique_id=1971907020 groups=["Obstacles"]]
 
 [node name="planebody" type="CharacterBody2D" parent="." unique_id=1264389308]
 script = ExtResource("1_dpar4")

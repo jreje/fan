@@ -113,17 +113,17 @@ position = Vector2(175, 119)
 visibility_layer = 4
 position = Vector2(168, 122)
 
-[node name="PlanePath" type="Path2D" parent="." unique_id=442273955]
-curve = SubResource("Curve2D_wkp8b")
-
-[node name="PlaneSpawnLocation" type="PathFollow2D" parent="PlanePath" unique_id=1064118512]
-position = Vector2(24, 64)
-
 [node name="plane" parent="." unique_id=1971907020 groups=["obstacles"] instance=ExtResource("8_yaehf")]
 unique_name_in_owner = true
-visible = false
 visibility_layer = 4
 position = Vector2(27, 66)
+
+[node name="PlanePath" type="Path2D" parent="plane" unique_id=442273955]
+position = Vector2(-27, -66)
+curve = SubResource("Curve2D_wkp8b")
+
+[node name="PlaneSpawnLocation" type="PathFollow2D" parent="plane/PlanePath" unique_id=1064118512]
+position = Vector2(24, 64)
 
 [node name="controls_directions_message" parent="." unique_id=1071352987 instance=ExtResource("9_074og")]
 layer = 0

@@ -9,6 +9,7 @@ var is_touching_boundary = false
 # TODO: Start scene with fan spinning
 # TODO: -- IMPORTANT -- Fix bug when fan is in corner
 func _ready():
+	print("Is this the right path ", $"../plane")
 	screen_size = get_viewport_rect().size
 	linear_damp = 5
 	angular_damp = 5
@@ -18,6 +19,9 @@ func _ready():
 # TODO: Simplify body_entered. Perhaps I can only use a body entered and the is in group property
 func _on_body_entered(body: Node) -> void:
 	is_touching_boundary = true
+	# If this enters the plane body, end game
+	if body.owner == $"../plane":
+		get_tree().change_scene_to_file("res://ui/game_over_screen.tscn")
 
 func _on_body_exited(body: Node) -> void:
 	is_touching_boundary = false
@@ -42,7 +46,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_released("fly"):
 		$AnimatedSprite2D.stop()
 	
-	print(linear_velocity)
-	print("ROTATION_SPEED: ", rotation_speed)
-	print("ANGULAR_DAMP: ", angular_damp)
-	print("THRUST_AMOUNT:", THRUST_AMOUNT)
+	#print(linear_velocity)
+	#print("ROTATION_SPEED: ", rotation_speed)
+	#print("ANGULAR_DAMP: ", angular_damp)
+	#print("THRUST_AMOUNT:", THRUST_AMOUNT)
